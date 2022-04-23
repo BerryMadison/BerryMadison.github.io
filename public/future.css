@@ -32,7 +32,7 @@ body {
 
 main {
 	background-color: #000;
-	background: url("https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/cyberpunkcity.jpg") center no-repeat;
+	background: url("https://BerryMadison.github.io/images/cyberpunkcity.jpg") center no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
@@ -260,7 +260,7 @@ footer a:hover i{
 
 .parallax {
 	display: block;
-	background-image: url("https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/code.jpg");
+	background-image: url("https://BerryMadison.github.io/images/code.jpg");
 	min-height: 100px; 
 	background-attachment: fixed;
 	background-size: cover;
@@ -269,7 +269,7 @@ footer a:hover i{
 }
 
 .parallax.second{
-	background-image: url("https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/parallaxBG1.jpg");
+	background-image: url("https://BerryMadison.github.io/images/parallaxBG1.jpg");
 }
 
 .content {
@@ -303,7 +303,7 @@ footer a:hover i{
 	position: fixed;
 	top: 2px;
 	left: 2px;
-	background: url("https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/menu.png") center no-repeat;
+	background: url("https://BerryMadison.github.io/images/menu.png") center no-repeat;
 	background-size: 30px 30px;
 	border: 2px solid #fc6;
 	border-radius: 5px;
@@ -339,7 +339,7 @@ footer a:hover i{
 	box-shadow: 0 0 5px #f30,
 				0 0 10px #f30,
 				inset 0 0 5px #f30;
-	background: #022 url("https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/back.png") repeat 300px 300px;
+	background: #022 url("https://BerryMadison.github.io/images/back.png") repeat 300px 300px;
 	-webkit-animation: ScanLine 10s ease-in-out infinite;
     -moz-animation: ScanLine 10s ease-in-out infinite;
     animation: ScanLine 10s ease-in-out infinite;
