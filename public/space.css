@@ -20,7 +20,8 @@
 	font-family: 'Megrim', cursive;
 	font-size: 2vh;
 	color: #f6b;
-	text-shadow: 0 0 5px #f08;
+	text-shadow: 0 0 5px #f08,
+			0 0 10 #f08;
 	scroll-behavior: smooth;
 }
 
@@ -195,6 +196,7 @@ footer a:hover i {
 	font-size: 5vh;
 	text-decoration: none;
 	margin: 2vh;
+	text-shadow: 0 0 5px #f08;
 }
 
 .signature {
