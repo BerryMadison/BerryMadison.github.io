@@ -41,7 +41,7 @@ function changeStyle(sheet) {
 	document.getElementById("pagestyle").setAttribute("href", sheet);
 	setCookie(sheet);
 	if(sheet == "https://BerryMadison.github.io/public/stylesheet.css") {
-		document.getElementById("icon").setAttribute("href", "https://BerryMadison.github.io/images/skullmain.ico");
+		document.getElementById("icon").setAttribute("href", "https://BerryMadison.github.io/images/skull.ico");
 		document.getElementById("myPic").setAttribute("src", "https://BerryMadison.github.io/images/me3.jpg");
 		document.getElementById("work").style.background = "none";
 		document.getElementById("about").style.background = "none";
