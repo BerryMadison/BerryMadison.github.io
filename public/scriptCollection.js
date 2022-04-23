@@ -41,12 +41,12 @@ function checkCookie() {
 function changeStyle(sheet) {
 	document.getElementById("pagestyle").setAttribute("href", sheet);
 	setCookie(sheet);
-	if(sheet == "stylesheet.css") {
+	if(sheet == "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/public/stylesheet.css") {
 		document.getElementById("icon").setAttribute("href", "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/skullmain.ico");
 		document.getElementById("myPic").setAttribute("src", "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/me3.jpg");
 		document.getElementById("work").style.background = "none";
 		document.getElementById("about").style.background = "none";
-	} else if(sheet == "future.css") {
+	} else if(sheet == "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/public/future.css") {
 		document.getElementById("icon").setAttribute("href", "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/skullfuture.ico");
 		document.getElementById("myPic").setAttribute("src", "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/steampunkme3.png");
 		document.getElementById("content").classList.add("screen");
@@ -57,15 +57,13 @@ function changeStyle(sheet) {
 		document.getElementById("content").classList.add("screen");
 		document.getElementsByClassName("content")[0].classList.add("screen");
 		document.getElementsByClassName("content")[1].classList.add("screen");
-	} else if(sheet == "space.css") {
+	} else {
 		document.getElementById("icon").setAttribute("href", "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/skullspace.ico");
 		document.getElementById("myPic").setAttribute("src", "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/DEDsec2.png");
 		document.getElementById("work").style.background = "url('https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/space4.jpg') center no-repeat";
 		document.getElementById("work").style.backgroundSize = "cover";
 		document.getElementById("about").style.background = "url('https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/space3.jpg') center no-repeat";
 		document.getElementById("about").style.backgroundSize = "cover";
-	} else {
-		document.getElementById("myPic").setAttribute("src", "https://github.com/BerryMadison/BerryMadison.github.io/blob/main/images/me2.jpg");
 	}
 }
 
