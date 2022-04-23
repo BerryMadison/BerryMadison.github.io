@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative&family=Libre+Barcode+39+Text&family=M+PLUS+Rounded+1c&family=Megrim&family=Uncial+Antiqua&display=swap');
+
+    /* 
+	font-family: 'Audiowide', cursive;
+
+    font-family: 'Cinzel Decorative', cursive;
+
+    font-family: 'Libre Barcode 39 Text', cursive;
+
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    font-family: 'Megrim', cursive;
+
+    font-family: 'Uncial Antiqua', cursive;
+	*/
+	
+/* elements */
+
+* {
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 2vh;
+	color: #09f;
+	scroll-behavior: smooth;
+}
+
+main {
+	width: 100%;
+	min-height: 300px;
+	height: 100vh;
+	box-shadow: inset 0 0 5px #fff,
+				inset 0 0 10px #b3e0ff,
+				inset 0 0 20px #b3e0ff,
+				inset 0 0 40px #b3e0ff,
+				inset 0 0 30px #b3e0ff;
+}
+
+body {
+	justify-content: center;
+	text-align: center;
+}
+
+footer {
+	padding: 5vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	box-shadow: 0 -5px 10px -5px #b3e0ff;
+}
+
+footer a:hover i{
+	color: #0df;
+	text-shadow:0 0 5px #09f,
+				0 0 10px #09f;
+}
+
+#privacy {
+	width: 80vw;
+	margin-left: 10vw;
+}
+
+.modal-dialog {
+	display: flex;
+	justify-content: center;
+}
+
+.modal-content {
+	margin-top: 10vh;
+	width: 80vw;
+}
+
+
+/* navigation */
+#navBar{
+	position: fixed;
+	background-color: rgba(255, 255, 255, .7);
+	box-shadow: inset 0 0 5px #b3e0ff,
+				inset 0 0 10px #b3e0ff;
+	border-radius: 20px;
+	top: 0;
+	z-index: 2;
+	margin-left: 32vw;
+	width: 37vw;
+}
+
+.navList {
+	list-style-type: none;
+	padding: 0;
+	padding-left: 1vw;
+}
+
+.navItem {
+	padding: 1vw;
+	float: left;
+	width: 7vw;
+	min-width: 45px;
+}
+
+.navItem a {
+	text-decoration: none;
+	color: #09f;
+}
+
+.navItem a:hover, button:hover {
+	text-shadow:0 0 5px #fff,
+				0 0 10px #09f,
+				0 0 20px #09f;
+}
+
+.navItem button {
+	border: none;
+	background-color: #fff;
+	color: #09f;
+}
+
+
+/* Dropdown */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	min-width: 75px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border-radius: 10px;
+}
+
+.dropdown:hover {
+	cursor: pointer;
+	text-shadow:0 0 5px #fff,
+				0 0 10px #09f,
+				0 0 20px #09f;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+
+/* content */
+#homeContent {
+	display: flex;
+	align-items: center;
+	margin: 2vw;
+}
+
+.myPicContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: contain;
+	
+}
+
+#myPic {
+	max-width: 40vw;
+	max-height: 100vh;
+	padding: 5vh;
+}
+
+.workImage {
+	float: left;
+	width: 50%;
+	height: 50%;
+	border: 1px solid white;
+}
+
+.projectImg {
+	max-width: 40vw;
+}
+
+.socials {
+	font-size: 5vh;
+	text-decoration: none;
+	margin: 2vh;
+}
+
+.signature {
+	font-size: 1.5vh;
+}
+
+
+/* positioning */
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.parallax {
+	display: block;
+	background-image: url("../images/code.jpg");
+	min-height: 100px; 
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.parallax.second{
+	background-image: url("../images/parallaxBG1.jpg");
+}
+
+.content {
+	width: 80vw;
+	margin-left: 10vw;
+	padding-top: 7vh;
+	padding-bottom: 7vh;
+	text-align: center;
+}
+
+.imageBox {
+	height: 30vh;
+	width: 40vw;
+	padding: 0;
+	margin: 0;
+}
+
+.col {
+	align-items: center;
+	margin: 2vh;
+}
+
+/* Background corner's */
+.background-corner {
+	position: absolute;
+	background: url("../images/gold-blue-corner.png") no-repeat;
+	background-size: contain;
+	margin: 0;
+	height: 20vh;
+	width: 17vh;
+}
+
+.topleft {
+	transform: rotate(180deg);
+	left: 0;
+	top: 0;
+}
+
+.topright {
+	transform: rotate(180deg) scaleX(-1);
+	right: 0;
+	top: 0;
+}
+
+.botleft {
+	transform: scaleX(-1);
+	left: 0;
+	bottom: 0;
+}
+
+.botright {
+	right: 0;
+	bottom: 0;
+}
+
+/* test's */
+
+
+
+
+
+
