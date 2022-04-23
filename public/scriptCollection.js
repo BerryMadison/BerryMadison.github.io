@@ -6,7 +6,6 @@ const modalElement = document.getElementById("modalContent")
 
 // setting, getting and check the value of the cookie
 function setCookie(cvalue) {
-	const d = new Date();
 	document.cookie ="style=" + cvalue + ";" + "SameSite=none";
 }
 
