@@ -18,7 +18,7 @@
 
 * {
 	font-family: 'Cinzel Decorative', cursive;
-	font-size: 2vh;
+	font-size: 0.9em;
 	color: #09f;
 	scroll-behavior: smooth;
 }
@@ -71,33 +71,35 @@ footer a:hover i{
 
 /* navigation */
 #navBar{
+	display: flex;
 	position: fixed;
+	justify-content: center;
 	background-color: rgba(255, 255, 255, .7);
 	box-shadow: inset 0 0 5px #b3e0ff,
 				inset 0 0 10px #b3e0ff;
-	border-radius: 20px;
 	top: 0;
 	z-index: 2;
-	margin-left: 32vw;
-	width: 37vw;
+	width: 100%;
 }
 
 .navList {
+	height: 10px;
 	list-style-type: none;
 	padding: 0;
-	padding-left: 1vw;
 }
 
 .navItem {
-	padding: 1vw;
+	padding: 5px;
+	margin: 0;
 	float: left;
-	width: 7vw;
-	min-width: 45px;
+	text-align: center;
 }
 
 .navItem a {
+	font-size: 1em;
 	text-decoration: none;
 	color: #09f;
+	padding: 10px;
 }
 
 .navItem a:hover, button:hover {
@@ -198,7 +200,7 @@ footer a:hover i{
 
 .parallax {
 	display: block;
-	background-image: url("https://BerryMadison.github.io/images/code.JPG");
+	background-image: url("../images/code.jpg");
 	min-height: 100px; 
 	background-attachment: fixed;
 	background-size: cover;
@@ -207,7 +209,7 @@ footer a:hover i{
 }
 
 .parallax.second{
-	background-image: url("https://BerryMadison.github.io/images/parallaxBG1.JPG");
+	background-image: url("../images/parallaxBG1.jpg");
 }
 
 .content {
@@ -233,7 +235,7 @@ footer a:hover i{
 /* Background corner's */
 .background-corner {
 	position: absolute;
-	background: url("https://BerryMadison.github.io/images/gold-blue-corner.png") no-repeat;
+	background: url("../images/gold-blue-corner.png") no-repeat;
 	background-size: contain;
 	margin: 0;
 	height: 20vh;
@@ -243,13 +245,13 @@ footer a:hover i{
 .topleft {
 	transform: rotate(180deg);
 	left: 0;
-	top: 0;
+	top: 30px;
 }
 
 .topright {
 	transform: rotate(180deg) scaleX(-1);
 	right: 0;
-	top: 0;
+	top: 30px;
 }
 
 .botleft {
@@ -263,10 +265,203 @@ footer a:hover i{
 	bottom: 0;
 }
 
-/* test's */
+/* media */
+@media screen and (max-width: 900px) {
+	.imageBox {
+		width: 99%;
+		height: 50vh;
+		padding: 0;
+		margin-left: 3px;
+	}
+	
+	.projectImg {
+		min-width: 99%;
+	}
+	
+	.workImage {
+		margin: 0;
+		border: none;
+		min-width: 50%;
+		height: 50%;
+	}
+	
+	.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 80vw;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.col {
+		padding: 5px;
+		padding-left: 1px;
+		margin: 0;
+		padding-bottom: 10px;
+		width: 80vw;
+	}
+	
+	.signature {
+		font-size: 0.75em;
+	}
+}
 
+@media screen and (max-width: 424px) {
+	
+	* {
+		font-size: 0.85em;
+	}
+	
+	h1 {
+		font-size: 1.5em;
+	}
+	
+	h4 {
+		font-size: 1em;
+	}
+	
+	main {
+		width: 100%;
+		height: 100vh;
+		box-shadow: inset 0 0 5px #fff,
+					inset 0 0 10px #b3e0ff,
+					inset 0 0 20px #b3e0ff;
+	}
+	
+	/* navigation */
+	#navBar{
+		display: flex;
+		position: fixed;
+		justify-content: center;
+		top: 0;
+		z-index: 2;
+		width: 100%;
+		background-color: #fff;
+	}
 
+	.navList {
+		height: 5px;
+		list-style-type: none;
+		padding: 0;
+	}
 
+	.navItem {
+		margin-top: 2px;
+		padding: 0;
+		float: left;
+		text-align: center;
+	}
 
+	.navItem a {
+		font-size: 0.6em;
+		text-decoration: none;
+		color: #09f;
+	}
+	
+	/* Dropdown */
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
 
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		min-width: 75px;
+		margin-left: -30px;
+		z-index: 1;
+	}
 
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown-content button{
+		border-radius: 100px;
+	}
+
+	.dropdown-content button:hover {
+		color: #fff;
+	}
+	
+	.parallax {
+		display: block;
+		background-position: left;
+		min-height: 50px; 
+	}
+	
+	#homeContent {
+		display: flex;
+		align-items: center;
+	}
+
+	.myPicContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50vw;
+		padding: 0;
+		margin: 0;
+	}
+
+	#myPic {
+		min-height: 60vh;
+		min-width: 65vw;
+	}
+	
+	#content {
+		padding: 10px;
+		margin-top: 15vh;
+		border-radius: 20px;
+		max-width: 80vw;
+		left: 10vw;
+	}
+	
+	.content {
+		width: 80vw;
+		margin-left: 10vw;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		text-align: center;
+	}
+
+	.imageBox {
+		height: 30vh;
+		width: 80vw;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.projectImg {
+		min-width: 80vw;
+		min-height: 20vh;
+	}
+	
+	.workImage {
+		margin: 0;
+		border: none;
+		min-width: 50%;
+		min-height: 50%;
+	}
+	
+	.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 80vw;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.col {
+		padding: 0;
+		margin: 0;
+		padding-bottom: 10px;
+		width: 80vw;
+	}
+	
+	.signature {
+		font-size: 0.7em;
+	}
+}
