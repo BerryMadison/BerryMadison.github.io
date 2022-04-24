@@ -18,7 +18,7 @@
 
 * {
 	font-family: 'Audiowide', cursive;
-	font-size: 2vh;
+	font-size: 0.95em;
 	color: #9fc;
 	text-shadow: 0 0 5px #0f0;
 	margin: 0;
@@ -31,7 +31,7 @@ body {
 
 main {
 	background-color: #000;
-	background: url("https://BerryMadison.github.io/images/cyberpunkcity.jpg") center no-repeat;
+	background: url("../images/cyberpunkcity.jpg") center no-repeat;
 	background-size: cover;
 	height: 100vh;
 }
@@ -103,7 +103,9 @@ footer a:hover i{
 .navItem {
 	width: 100px;
 	padding: 5px;
+	margin-left: -10px;
 	text-align: center;
+	background-color: rgba(0, 0, 0, .8);
 	border: 2px solid #fc6;
 	border-radius: 10px;
 	box-shadow: 0 0 5px #f30,
@@ -114,7 +116,6 @@ footer a:hover i{
 .navItem a {
 	text-decoration: none;
 	color: #b3fff0;
-	text-align: center;
 }
 
 .navItem a:hover, button:hover {
@@ -125,7 +126,7 @@ footer a:hover i{
 
 .navItem button {
 	border: none;
-	background-color: #111;
+	background-color: rgba(0, 0, 0, .8);
 	color: #0fc;
 }
 
@@ -143,6 +144,7 @@ footer a:hover i{
 .dropdown-content {
 	display: none;
 	position: absolute;
+	margin-left: -7px;
 	background-color: #000;
 	min-width: 100px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -176,7 +178,7 @@ footer a:hover i{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 98vh;
+	height: 100vh;
 	width: 100%
 }
 
@@ -184,48 +186,6 @@ footer a:hover i{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-}
-
-
-@media (max-width: 1100px) {
-	.myPicContainer {
-		display: flex;
-		position: absolute;
-		justify-content: right;
-		height: 43vh;
-		width: 22vw;
-		bottom: 0;
-		right: 0;
-	}
-
-	#myPic {
-		position: none;
-		align-self: flex-end;
-		max-width: 100%;
-		max-height: 100%;
-		object-fit: contain;
-	}
-}
-
-@media (min-width: 1101px) and (max-width: 1600px) {
-	#myPic {
-		max-width: 350px;
-		max-height: 350px;
-	}
-}
-
-@media (max-width: 1900px) and (min-width: 1601px) and (min-height: 600px) {
-	#myPic {
-		width: 500px;
-		height: 500px;
-	}
-}
-
-@media (min-width:1901px) and (max-width: 3000px) and (min-height: 600px) {
-	#myPic {
-		width: 600px;
-		height: 600px;
-	}
 }
 
 .workImage {
@@ -237,6 +197,7 @@ footer a:hover i{
 
 .projectImg {
 	max-width: 40vw;
+	cursor: pointer;
 }
 
 .socials {
@@ -259,7 +220,7 @@ footer a:hover i{
 
 .parallax {
 	display: block;
-	background-image: url("https://BerryMadison.github.io/images/code.JPG");
+	background-image: url("../images/code.jpg");
 	min-height: 100px; 
 	background-attachment: fixed;
 	background-size: cover;
@@ -268,11 +229,10 @@ footer a:hover i{
 }
 
 .parallax.second{
-	background-image: url("https://BerryMadison.github.io/images/parallaxBG1.JPG");
+	background-image: url("../images/parallaxBG1.jpg");
 }
 
 .content {
-	background-color: #000;
 	width: 80vw;
 	margin-left: 10vw;
 	padding-top: 7vh;
@@ -302,7 +262,7 @@ footer a:hover i{
 	position: fixed;
 	top: 2px;
 	left: 2px;
-	background: url("https://BerryMadison.github.io/images/menu.png") center no-repeat;
+	background: url("../images/menu.png") center no-repeat;
 	background-size: 30px 30px;
 	border: 2px solid #fc6;
 	border-radius: 5px;
@@ -313,32 +273,21 @@ footer a:hover i{
 	width: 30px;
 }
 
-.topright {
-	
-}
-
-.botleft {
-	
-}
-
-.botright {
-	
-}
 
 /* text */
 #content {
-	padding: 2vh;
+	padding: 10px;
 }
 
 /* animations */
 .screen {
-	opacity: 98%;
+	opacity: 93%;
 	border: 3px solid #fc6;
 	border-radius: 10px;
 	box-shadow: 0 0 5px #f30,
 				0 0 10px #f30,
 				inset 0 0 5px #f30;
-	background: #022 url("https://BerryMadison.github.io/images/back.png") repeat 300px 300px;
+	background: #022 url("../images/back.png") repeat 300px 300px;
 	-webkit-animation: ScanLine 10s ease-in-out infinite;
     -moz-animation: ScanLine 10s ease-in-out infinite;
     animation: ScanLine 10s ease-in-out infinite;
@@ -548,4 +497,279 @@ footer a:hover i{
 	}
 }
 
-/* test's */
+
+@media screen and (min-width: 1101px) {
+	* {
+		font-size: 0.9em;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	#myPic {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	* {
+		font-size: 0.9em;
+	}
+	
+	h1 {
+		font-size: 2em;
+	}
+	
+	.myPicContainer {
+		display: flex;
+		position: absolute;
+		justify-content: right;
+		height: 43vh;
+		width: 60vw;
+		bottom: 0;
+		right: 0;
+	}
+
+	#myPic {
+		position: none;
+		align-self: flex-end;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	
+	.imageBox {
+		width: 99%;
+		height: 40vh;
+		padding: 0;
+		margin-left: 1px;
+	}
+	
+	.projectImg {
+		min-width: 99%;
+		margin-left: 1px;
+	}
+	
+	.workImage {
+		margin: 0;
+		border: none;
+		min-width: 50%;
+		height: 50%;
+	}
+	
+	.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 80vw;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.col {
+		padding: 5px;
+		padding-left: 1px;
+		margin: 0;
+		padding-bottom: 10px;
+		width: 80vw;
+	}
+	
+	.signature {
+		font-size: 0.75em;
+	}
+}
+
+@media screen and (min-width: 1600px) and (min-height: 1000px) {
+	#myPic {
+		width: 500px;
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 200px) {
+	#myPic {
+		width: 75px;
+		height: 75px;
+	}
+}
+
+
+/* Phone */
+@media screen and (max-width: 424px), screen and (max-height: 350px) {
+	
+	* {
+		font-size: 0.85em;
+	}
+	
+	h1 {
+		font-size: 1.5em;
+	}
+	
+	h4 {
+		font-size: 1em;
+	}
+	
+	main {
+		background-size: cover;
+	}
+	
+	/* navigation */
+	#navBar {
+		position: fixed;
+		width: 22px;
+		height: 22px;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	#navBar:hover .navList{
+		display: block;
+	}
+
+	.navList {
+		display: none;
+		list-style-type: none;
+		margin-left: -10px;
+	}
+
+	.navItem {
+		width: 70px;
+		text-align: center;
+		border: 1px solid #fc6;
+		border-radius: ;
+		box-shadow: 0 0 5px #f30,
+					0 0 10px #f30,
+					inset 0 0 5px #f30;
+	}
+
+	.navItem a {
+		text-decoration: none;
+		color: #b3fff0;
+		text-align: center;
+	}
+
+	.navItem a:hover, button:hover {
+		text-shadow:0 0 5px #f30,
+					0 0 10px #f30;
+		color: #fc6;
+	}
+	
+	/* Dropdown */
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		min-width: 75px;
+		margin-left: -8px;
+		z-index: 1;
+		border: 1px solid #fc6;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown-content button{
+		border-radius: 100px;
+	}
+
+	.dropdown-content button:hover {
+		color: #fc6;
+	}
+	
+	.stylebutton {
+		border-radius: 5px;
+		margin: 0;
+	}
+	
+	.topleft {
+		display: flex;
+		position: fixed;
+		top: 2px;
+		left: 2px;
+		z-index: 1;
+		background: url("../images/menu.png") center no-repeat;
+		background-size: 20px 20px;
+		border: 1px solid #fc6;
+		box-shadow: 0 0 5px #f30,
+					0 0 10px #f30,
+					inset 0 0 5px #f30;
+		height: 20px;
+		width: 20px;
+	}
+	
+	.screen {
+		border: 1px solid #fc6;
+	}
+	
+	.parallax {
+		display: block;
+		background-position: left;
+		min-height: 50px; 
+	}
+	
+	#content {
+		padding: 10px;
+		border-radius: 20px;
+		max-width: 80vw;
+		left: 10vw;
+	}
+	
+	.content {
+		width: 80vw;
+		margin-left: 10vw;
+		padding: 0;
+		text-align: center;
+	}
+	
+	#myPic {
+		max-width: 150px;
+		max-height: 150px;
+	}
+	
+	.imageBox {
+		width: 78vw;
+		height: 30vh;
+		padding: 0;
+		margin-left: 2px;
+	}
+	
+	.projectImg {
+		min-width: 78vw;
+		min-height: 20vh;
+		margin-left: 2px;
+	}
+	
+	.workImage {
+		margin: 0;
+		border: none;
+		min-width: 50%;
+		min-height: 50%;
+	}
+	
+	.row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 80vw;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.col {
+		padding: 0;
+		margin: 0;
+		padding-bottom: 10px;
+		width: 78vw;
+	}
+	
+	.signature {
+		font-size: 0.75em;
+	}
+}
