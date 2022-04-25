@@ -1,7 +1,7 @@
 const modalElement = document.getElementById("modalContent")
-	var myModal = new bootstrap.Modal(modalElement, {
-	  keyboard: false
-	})
+var myModal = new bootstrap.Modal(modalElement, {
+  keyboard: false
+})
 
 var target = document.getElementsByClassName("dropdown")[0];
 target.addEventListener("mouseover", mOver, false);
