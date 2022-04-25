@@ -51,7 +51,6 @@ function checkCookie() {
 		changeStyle(style);
 	} else {
 		style = document.getElementById("pagestyle").getAttribute("href");
-		console.log(style);
 		setCookie(style);
     }
 }
@@ -101,5 +100,5 @@ function imagePopUp(e) {
 	var imgsrc = document.getElementsByClassName("projectImg")[e].getAttribute("src");
 	
 	document.getElementById("img").setAttribute("src", imgsrc);
-	myModal.show();
+	modal.style.display("block");
 }
