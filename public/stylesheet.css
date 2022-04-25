@@ -307,7 +307,7 @@ footer a:hover i{
 	}
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 424px), and screen (max-height: 350px){
 	
 	* {
 		font-size: 0.95em;
@@ -323,7 +323,7 @@ footer a:hover i{
 	
 	main {
 		width: 100%;
-		height: 90vh;
+		height: 91vh;
 		box-shadow: inset 0 0 5px #fff,
 					inset 0 0 10px #b3e0ff,
 					inset 0 0 20px #b3e0ff;
@@ -341,7 +341,7 @@ footer a:hover i{
 	}
 
 	.navList {
-		height: 5px;
+		height: 10px;
 		list-style-type: none;
 		padding: 0;
 	}
@@ -354,7 +354,7 @@ footer a:hover i{
 	}
 
 	.navItem a {
-		font-size: 0.6em;
+		font-size: 0.95em;
 		text-decoration: none;
 		color: #09f;
 	}
