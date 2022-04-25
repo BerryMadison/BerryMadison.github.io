@@ -92,8 +92,3 @@ function imagePopUp(e) {
 	document.getElementById("img").setAttribute("src", imgsrc);
 	myModal.show();
 }
-
-function styleChange() {
-	document.getElemantsByClassName("dropdown-content")[0].classList.toggle("nosplay");
-
-}
