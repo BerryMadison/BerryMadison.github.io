@@ -87,7 +87,7 @@ footer a:hover i {
 }
 
 .close {
-  color: #000;
+  color: #f6b;
   float: right;
   font-size: 40px;
   font-weight: bold;
@@ -95,7 +95,7 @@ footer a:hover i {
 
 .close:hover,
 .close:focus {
-  color: white;
+  color: #505;
   text-decoration: none;
   cursor: pointer;
 }
@@ -220,7 +220,7 @@ footer a:hover i {
 	font-size: 5vh;
 	text-decoration: none;
 	margin: 2vh;
-	text-shadow: 0 0 5px red;
+	text-shadow: 0 0 5px #f08;
 }
 
 .signature {
