@@ -1,11 +1,22 @@
-const modalElement = document.getElementById("modalContent");
-var myModal = new bootstrap.Modal(modalElement, {
-  keyboard: false
-});
+var modal = document.getElementById("modalContent");
+var span = document.getElementsByClassName("close")[0];
 
-var target = document.getElementsByClassName("dropdown")[0];
-target.addEventListener("mouseover", mOver, false);
-target.addEventListener("mouseout", mOut, false);
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+
+function startUp() {
+	var target = document.getElementsByClassName("dropdown")[0];
+	target.addEventListener("mouseover", mOver, false);
+	target.addEventListener("mouseout", mOut, false);
+	checkCookie();
+}
 
 function mOver() {
 	document.getElementsByClassName("dropdown-content")[0].classList.remove("nosplay");
