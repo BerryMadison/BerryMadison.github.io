@@ -100,5 +100,5 @@ function imagePopUp(e) {
 	var imgsrc = document.getElementsByClassName("projectImg")[e].getAttribute("src");
 	
 	document.getElementById("img").setAttribute("src", imgsrc);
-	modal.style.display("block");
+	document.getElementById("modalContent").style.display("block");
 }
