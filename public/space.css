@@ -289,7 +289,7 @@ footer a:hover i {
 @media screen and (max-width: 424px) {
 	
 	* {
-		font-size: 0.1em;
+		font-size: 1em;
 	}
 	
 	h1 {
