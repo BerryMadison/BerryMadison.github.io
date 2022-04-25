@@ -331,6 +331,7 @@ footer a:hover i {
 	}
 	
 	main {
+		heigth: 91vh;
 		background-size: cover;
 	}
 	
@@ -347,7 +348,7 @@ footer a:hover i {
 	}
 
 	.navList {
-		height: 10px;
+		height: 15px;
 		list-style-type: none;
 		padding: 0;
 	}
