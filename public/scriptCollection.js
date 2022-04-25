@@ -3,10 +3,20 @@ const modalElement = document.getElementById("modalContent")
 	  keyboard: false
 	})
 
+var target = document.getElementsByClassName("dropdown")[0];
+target.addEventListener("mouseover", mOver, false);
+target.addEventListener("mouseout", mOut, false);
 
-// setting, getting and check the value of the cookie
+function mOver() {
+	document.getElementsByClassName("dropdown-content")[0].classList.remove("nosplay");
+}
+
+function mOut() {
+	document.getElementsByClassName("dropdown-content")[0].classList.add("nosplay");
+}
+
 function setCookie(cvalue) {
-	document.cookie ="style=" + cvalue + ";" + "SameSite=none";
+	document.cookie ="style=" + cvalue + ";" + "SameSite=none;secure";
 }
 
 function getCookie(cname) {
@@ -45,7 +55,9 @@ function changeStyle(sheet) {
 		document.getElementById("myPic").setAttribute("src", "https://BerryMadison.github.io/images/me3.jpg");
 		document.getElementById("work").style.background = "none";
 		document.getElementById("about").style.background = "none";
-		styleChange(true);
+		if(!document.getElementsByClassName("dropdown-content")[0].classList.contains("nosplay")) {
+			document.getElementsByClassName("dropdown-content")[0].classList.add("nosplay");
+		}
 	} else if(sheet == "https://BerryMadison.github.io/public/future.css") {
 		document.getElementById("icon").setAttribute("href", "https://BerryMadison.github.io/images/skullfuture.ico");
 		document.getElementById("myPic").setAttribute("src", "https://BerryMadison.github.io/images/steampunkme3.png");
@@ -57,7 +69,9 @@ function changeStyle(sheet) {
 		document.getElementById("content").classList.add("screen");
 		document.getElementsByClassName("content")[0].classList.add("screen");
 		document.getElementsByClassName("content")[1].classList.add("screen");
-		styleChange(true);
+		if(!document.getElementsByClassName("dropdown-content")[0].classList.contains("nosplay")) {
+			document.getElementsByClassName("dropdown-content")[0].classList.add("nosplay");
+		}
 	} else {
 		document.getElementById("icon").setAttribute("href", "../images/skullspace.ico");
 		document.getElementById("myPic").setAttribute("src", "../images/DEDsec2.png");
@@ -65,7 +79,9 @@ function changeStyle(sheet) {
 		document.getElementById("work").style.backgroundSize = "cover";
 		document.getElementById("about").style.background = "url('../images/space3.jpg') center no-repeat";
 		document.getElementById("about").style.backgroundSize = "cover";
-		styleChange(true);
+		if(!document.getElementsByClassName("dropdown-content")[0].classList.contains("nosplay")) {
+			document.getElementsByClassName("dropdown-content")[0].classList.add("nosplay");
+		}
 	}
 }
 
@@ -77,8 +93,7 @@ function imagePopUp(e) {
 	myModal.show();
 }
 
-function styleChange(bool) {
-	if(bool) {
-		document.getElemantsByClassName("dropdown-content")[0].style.display = "none";
-	}
+function styleChange() {
+	document.getElemantsByClassName("dropdown-content")[0].classList.toggle("nosplay");
+
 }
