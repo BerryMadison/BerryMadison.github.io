@@ -45,7 +45,6 @@ function changeStyle(sheet) {
 		document.getElementById("myPic").setAttribute("src", "https://BerryMadison.github.io/images/me3.jpg");
 		document.getElementById("work").style.background = "none";
 		document.getElementById("about").style.background = "none";
-		document.getElementsByClassName("dropdown-content")[0].style.display = "none";
 	} else if(sheet == "https://BerryMadison.github.io/public/future.css") {
 		document.getElementById("icon").setAttribute("href", "https://BerryMadison.github.io/images/skullfuture.ico");
 		document.getElementById("myPic").setAttribute("src", "https://BerryMadison.github.io/images/steampunkme3.png");
@@ -57,7 +56,6 @@ function changeStyle(sheet) {
 		document.getElementById("content").classList.add("screen");
 		document.getElementsByClassName("content")[0].classList.add("screen");
 		document.getElementsByClassName("content")[1].classList.add("screen");
-		document.getElementsByClassName("dropdown-content")[0].style.display = "none";
 	} else {
 		document.getElementById("icon").setAttribute("href", "../images/skullspace.ico");
 		document.getElementById("myPic").setAttribute("src", "../images/DEDsec2.png");
@@ -65,7 +63,6 @@ function changeStyle(sheet) {
 		document.getElementById("work").style.backgroundSize = "cover";
 		document.getElementById("about").style.background = "url('../images/space3.jpg') center no-repeat";
 		document.getElementById("about").style.backgroundSize = "cover";
-		document.getElementsByClassName("dropdown-content")[0].style.display = "none";
 	}
 }
 
