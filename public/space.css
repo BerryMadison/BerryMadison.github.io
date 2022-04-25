@@ -124,15 +124,14 @@ footer a:hover i {
 }
 
 .dropdown-content {
-	display: none;
 	position: absolute;
 	min-width: 75px;
 	margin-left: -12px;
 	z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
-	display: block;
+.nosplay {
+	display: none;
 }
 
 .dropdown-content button{
