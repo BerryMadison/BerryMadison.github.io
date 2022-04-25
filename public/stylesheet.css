@@ -18,7 +18,7 @@
 
 * {
 	font-family: 'Cinzel Decorative', cursive;
-	font-size: 0.9em;
+	font-size: 1rem;
 	color: #09f;
 	scroll-behavior: smooth;
 }
@@ -310,15 +310,15 @@ footer a:hover i{
 @media screen and (max-width: 424px) {
 	
 	* {
-		font-size: 0.85em;
+		font-size: 1em;
 	}
 	
 	h1 {
-		font-size: 1.5em;
+		font-size: 1.6em;
 	}
 	
 	h4 {
-		font-size: 1em;
+		font-size: 1.3em;
 	}
 	
 	main {
