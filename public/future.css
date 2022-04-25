@@ -549,6 +549,11 @@ footer a:hover i{
 		background-size: cover;
 	}
 	
+	footer a:hover i{
+		color: #9fc;
+		text-shadow: 0 0 3px #0fc;
+	}
+	
 	/* navigation */
 	#navBar {
 		position: fixed;
