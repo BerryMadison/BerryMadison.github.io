@@ -83,7 +83,7 @@ footer a:hover i{
 }
 
 .navList {
-	height: 10px;
+	height: 20px;
 	list-style-type: none;
 	padding: 0;
 }
@@ -96,7 +96,7 @@ footer a:hover i{
 }
 
 .navItem a {
-	font-size: 1em;
+	font-size: 1.2em;
 	text-decoration: none;
 	color: #09f;
 	padding: 10px;
