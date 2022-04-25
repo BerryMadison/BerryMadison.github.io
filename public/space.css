@@ -18,7 +18,7 @@
 
 * {
 	font-family: 'Megrim', cursive;
-	font-size: 0.95em;
+	font-size: 0.1rem;
 	color: #f6b;
 	text-shadow: 0 0 5px #f08,
 				 0 0 10px #f08;
@@ -289,15 +289,15 @@ footer a:hover i {
 @media screen and (max-width: 424px) {
 	
 	* {
-		font-size: 0.87em;
+		font-size: 0.1em;
 	}
 	
 	h1 {
-		font-size: 1.5em;
+		font-size: 1.6em;
 	}
 	
 	h4 {
-		font-size: 1em;
+		font-size: 1.3em;
 	}
 	
 	main {
