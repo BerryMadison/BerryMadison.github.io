@@ -576,6 +576,7 @@ footer a:hover i{
 	}
 	
 	main {
+		height: 91vh;
 		background-size: cover;
 	}
 	
